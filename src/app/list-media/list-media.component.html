@@ -6,3 +6,15 @@
     <p>{{media.description}}</p>
   </li>
 </ul>
+<ul>
+  <li *ngFor="let stop of stopArray">
+    <p>{{stop.name}}</p>
+    <p>{{stop.lat}}</p>
+    <p>{{stop.lon}}</p>
+    <ul>
+      <li *ngFor="let pattern of stop.patterns">
+        <p>{{pattern.name}}</p>
+      </li>
+    </ul>
+  </li>
+</ul>
